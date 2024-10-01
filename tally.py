@@ -3,7 +3,12 @@ ANON = '--'
 names = {} # TODO unused
 choices = {}
 
+print()
+print("=====")
 print('TALLY')
+print("=====")
+print()
+
 print('Enter choices one by one. Blank to quit')
 print('Lines with : will be interpreted as name : choice')
 print()
@@ -21,6 +26,7 @@ while choice != '':
     choice = input('Next: ').strip().lower()
 
 print()
+print('=======')
 print('Results')
 print('=======')
 print()
@@ -36,3 +42,6 @@ for choice in sorted(choices, key=lambda c: (len(choices[c]), tuple(-ord(m) for 
         print(f' > {", ".join(non_anon)}')
     else:
         print()
+
+print()
+input('Press Enter to exit')
