@@ -62,7 +62,7 @@ if (not save) or (save == 'Y'):
 
     Path.mkdir(Path('./output'), parents=True, exist_ok=True)
     ts = date.today().strftime('%Y-%m-%d')
-    path = Path(f'output/{ts} {tag}.csv')
+    path = Path(f'./output/{ts} {tag}.csv')
 
     with open(path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
