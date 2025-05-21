@@ -80,4 +80,4 @@ if (not save) or (save == 'Y'):
         
         print(f'Saved to {path}')
 
-input('Press Enter to exit')
+input('\nPress Enter to exit')
